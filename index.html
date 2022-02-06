@@ -14,8 +14,8 @@
   <body>
     <!-- use bootstrap 4 -->
     <!-- Navbar Component -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark font-weight-bold" style="font-size: 1.3em;">    
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <nav class="navbar navbar-expand navbar-dark bg-dark font-weight-bold sticky-top">    
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link"  href="#skill">Skills</a>
           <a class="nav-item nav-link " href="#experience">Experience</a>
@@ -39,35 +39,35 @@
         <div id = "skill" class = "row mb-3">
           <div class="col">
             <h3 class = "main-title">Skills</h3>
-            <div class = "row">              
-              <div class="col-3">
+            <div class = "row ">              
+              <div class="col-3 d-none d-md-block">
                 <h4 class = "sub-title1">Computer Science</h4>  
               </div>
-              <div class="col-4">
-                <h5 class="sub-title2">CS, Data Analytics & Science</h5>
+              <div class="col-6 col-md-4">
+                <h5 class="sub-title2">CS & Data Science</h5>
                 <ul class="skilllist">
                   <li class = "skillitem">Data structures and algorithms</li>
-                  <li class = "skillitem">Python data analysis</li>
+                  <li class = "skillitem">Python data analysis and Data visualization</li>
                   <li class = "skillitem">Machine learning</li>
-                  <li class = "skillitem">Azure databricks</li>                  
-                  <li class = "skillitem">Data visualization</li>
-                  <li class = "skillitem">MATLAB analysis/development</li>
+                  <li class = "skillitem">Azure databricks</li>
+                  <li class = "skillitem">MATLAB analysis and development</li>
                   <li class = "skillitem">Minitab statistical analysis</li>
                 </ul>
                 <!-- display certification -->
                 <p id="view-certification">
-                  <button class="btn btn-primary" type="button" data-toggle="collapse"
-                   data-target="#dataScienceCertification" aria-expanded="false" aria-controls="dataScienceCertification">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" href="#dummy"
+                   data-target="#dataScienceCertification" aria-expanded="false" aria-controls="dataScienceCertification" >
                    view certification
                   </button>
                 </p>                     
 
               </div>
-              <div class="col-4">              
+              <div class="col-6 col-md-4">              
                 <h5 class="sub-title2">Web Development</h5>
                 <ul class="skilllist">
-                  <li class = "skillitem">HTML, CSS, JavaScript</li>
-                  <li class = "skillitem">BootStrap</li>
+                  <li class = "skillitem">HTML, CSS</li>
+                  <li class = "skillitem">JavaScript</li>
+                  <li class = "skillitem">Bootstrap</li>
                   <li class = "skillitem">Vue.js</li>
                   <li class = "skillitem">Node.js</li>
                   <li class = "skillitem">D3</li>
@@ -85,7 +85,7 @@
               <div class="col-4">
                 <!--dummy-->
               </div>
-              <div class="col-7">
+              <div class="col-12 col-md-7">                
                 <div class="collapse" id="dataScienceCertification">
                   <div class="card card-body">
                     <!-- table of data science cerification -->
@@ -129,7 +129,7 @@
                     </table>
                   </div>
                 </div> 
-
+                
                 <div class="collapse" id="webDevCertification">
                   <div class="card card-body">
                     <!-- table of web dev -->
@@ -170,15 +170,16 @@
       
             </div>
             <div class = "row justify-content-start mt-3 mb-3">
-              <div class="col-3">
+              <div class="col-3 d-none d-md-block">
                 <h4>R&D in Display</h4>
               </div>
-              <div class="col-7">                
+              <div class="col-12 col-md-7">      
+                <h5 class="sub-title2">R&D</h5>
                 <p class="text-left">
                   <ul class = "skilllist">
-                    <li class = "skillitem-rd">TFT/LED SPICE modeling for Eldo simulation</li>
-                    <li class = "skillitem-rd">LTPS LCD process development</li>
-                    <li class = "skillitem-rd">Device measurement & characteristization</li>                    
+                    <li class = "skillitem-rd">TFT/LED SPICE modeling and model development for Eldo simulation</li>
+                    <li class = "skillitem-rd">LTPS LCD new process development</li>
+                    <li class = "skillitem-rd">Semiconductor device measurement & characteristization</li>                    
                     <li class = "skillitem-rd">Digital transformation for process development</li>      
                   </ul>  
                 </p>
@@ -195,34 +196,49 @@
         <!-- Experience -->
         <div id ="experience" class = "row mt-3 mb-3">
           <div class="col">
-            <h3>Experience</h3>
-            <div class = "row">
-              <div class="col">
-                <h4>Computer Science</h4>
+            <h3 class = "main-title">Experience</h3>
+              <div class="col-12 col-md-10 mt-6 mb-6 ml-3 shadow">
+                <h4 class="sub-title2">Computer science</h4>
+                <ul>
+                  <li class="exp-item">Development of AUO in-house model card fitting GUI application software "ModelingOne", 
+                    being AUO LTPS model card fitting standard tool</li>
+                  <li class="exp-item">Development of TFT measurement data analysis GUI software, 
+                    to save time of data anlaysis</li>
+                  <li class="exp-item">Development of L4B cell data assistant software, 
+                    to help L4B cell data arrangement for cell process</li>
+                  <li class="exp-item">LTPS Fab TEG data auto analysis and visualization, RD AI project(cowork w. IT)</li>
+                  <li class="exp-item">Digital transformation project for new process transferring (on-going)</li>
+                </ul>
+              
+
               </div>
-              <div class="col">                
+              <div class="col-12 col-md-10 mt-6 mb-6 ml-3 shadow">              
+                <h4 class="sub-title2">R&D in Display</h4>
+                <ul>
+                  <li class="exp-item">new micro/mini LED SPICE model development; designers use new LED model to simulate LED circuit (cowork w. Mentor)</li>
+                  <li class="exp-item">Flexible LCD development, for Car BU new product idea development, published in SID paper</li>
+                  <li class="exp-item">L3D new LTPS process development, to realize mass production in L3D</li>
+                  <li class="exp-item">Measurement and modeling of LED device optical and electrical properties</li>
+                </ul>
+              
               </div>
-            </div>
-            <div class = "row">
-              <div class="col">
-                <h4>R&D in Display</h4>
-              </div>
-              <div class="col">                
-              </div>
-            </div>
+
+
+
+       
           </div>
         </div>
         <!-- Education -->
         <div id="education" class = "row">
           <div class="col mt-3">
-            <h3>Education</h3>
+            <h3 class = "main-title">Education</h3>
             <h5 class="pl-5 pt-2">MS in Chemical engineering, National Taiwan University</h5>
           </div>
         </div>
         <!-- Hobby -->
         <div id="hobby" class = "row mt-3 mb-3">
           <div class="col mt-3 mb-3">
-            <h3>Hobby</h3>
+            <h3 class = "main-title">Hobby</h3>
             <div class="row mt-3 mb-3 pl-5">
               <div class="col-10">
                 <h4>Photography</h4>
@@ -239,19 +255,19 @@
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="./image/photo/DSC_0080.JPG" class="d-block w-80" alt="photo1">
+                      <img src="./image/photo/DSC_0080.JPG" class="d-block w-100" alt="photo1">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>武陵農場楓葉</h5>                      
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src="./image/photo/DSC_0083.JPG" class="d-block w-80" alt="photo2">
+                      <img src="./image/photo/DSC_0083.JPG" class="d-block w-100" alt="photo2">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>微距攝影</h5>                      
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src="./image/photo/DSC_2625.jpg" class="d-block w-80" alt="photo3">
+                      <img src="./image/photo/DSC_2625.jpg" class="d-block w-100" alt="photo3">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>內洞瀑布</h5>                      
                       </div>
